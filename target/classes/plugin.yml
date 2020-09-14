@@ -1,0 +1,4 @@
+name: 'BukkitQueue'
+version: '1.0-SNAPSHOT'
+main: com.github.hjafres.BukkitQueue
+api-version: '1.16'
