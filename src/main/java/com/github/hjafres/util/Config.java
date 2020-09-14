@@ -1,5 +1,7 @@
 package com.github.hjafres.util;
 
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
@@ -14,4 +16,6 @@ public class Config {
     public static final String SERVER = "survival";
     // Interval (in seconds) of queue progressing.
     public static final long QUEUE_INTERVAL = 5L;
+    // Location where the player is spawned.
+    public static final Location SPAWN = new Location(Bukkit.getWorld("world_the_end"), 900, 90000, 900);
 }

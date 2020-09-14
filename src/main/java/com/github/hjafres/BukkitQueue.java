@@ -23,7 +23,7 @@ public class BukkitQueue extends JavaPlugin {
     @Override
     public void onEnable() {
         PluginManager pm = Bukkit.getPluginManager();
-        pm.registerEvents(new PlayerJoinListener(), this);
+        pm.registerEvents(new PlayerJoinListener(this), this);
         pm.registerEvents(new PlayerInteractListener(this), this);
 
         Bukkit.getScheduler().runTaskTimer(this, new QueueTask(this), 0L, Config.QUEUE_INTERVAL);
