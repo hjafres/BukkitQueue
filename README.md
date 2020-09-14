@@ -1,0 +1,2 @@
+# BukkitQueue
+Simple queue plugin.
